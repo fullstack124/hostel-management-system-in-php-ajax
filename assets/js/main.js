@@ -10,8 +10,7 @@ $(document).ready(function () {
             dataType:'JSON',
             processData: false,
             contentType: false,
-            success: (data) => {    
-                console.log(data);
+            success: (data) => {     
                 if(data.success){
                     data.message.forEach(val => {
                         toastr["success"](val)

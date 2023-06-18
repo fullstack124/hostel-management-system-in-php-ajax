@@ -3,7 +3,7 @@ include '../../connection/config.php';
 $error = [];
 foreach ($_POST as $key => $value) {
     if ($value == '') {
-        array_push($error, 'The ' . $key . ' filed is required');
+        array_push($error, 'The ' . $key . ' field is required');
     }
 }
 if (!empty($error)) {
